@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>feedback</title>
+	<style>
+		body{
+			background-color: grey;
+		}
+		legend{
+			color: #ffcc99;
+			font-size: 50px;
+			font-style: italic;
+		}
+		form{
+			font-size: 20px;
+		}
+		input [type=text],input[type=Email],input[type=radio],input[type=textarea]{
+			text-align: left;
+		}
+		input[type=submit],input[type=reset]{
+			width: "200";
+			box-sizing: border-box;
+			padding: 10px 0;
+			margin-top: 30px;
+			outline: none;
+			border: none;
+			background: #60adde;
+			opacity: 0.7;
+			border-radius: 20px;
+			font-size: 20px;
+			color: #fff;
+		}
+		input[type=submit]:hover{
+			background: #003366;
+			opacity: 0.7;
+		}
+		input[type=reset]:hover{
+			background: #003366;
+			opacity: 0.7;
+		}
+	</style>
+</head>
+<body>
+    <form>
+    	<fieldset>
+    	<legend>Feedback</legend>
+    	<div>	
+    	     <label>Name</label>
+    	     <input type="txt" name="Name" required="*">
+    	</div><br>
+    	<div>
+    		<label>Email Id</label>
+    		<input type="Email" name="EmailId" required="*">
+    	</div><br>
+    	<div>     
+    	     <label>Rate us</label>
+    	     <input type="radio" name="rating" value="excellent" required="*">
+    	     excellent<br>
+    	     <input type="radio" name="rating" value="satisfactory" required="*">
+    	     satisfactory<br>
+    	     <input type="radio" name="rating" value="good" required="*">
+    	     good<br>
+    	     <input type="radio" name="rating" value="need to improve" required="*">
+    	     need to improve<br>	
+    	 </div>
+    	 <div>
+    	 	<label>Any other remarks</label>
+              <textarea></textarea>
+    	 </div><br>
+    	 <div>
+    	 	<input type="checkbox" name="confirm" value="If you sure about your feedback...click here" required="*">
+    	 	If you sure about your feedback...click here<br>
+    	 </div>
+    	 <div>
+    	 	<input type="submit" name="submit" value="submit feedback"> 
+    	 </div>
+    	 <div>
+    	 	<input type="reset" name="reset" value="Reset"> 
+    	 </div>
+    	</fieldset>
+    </form>
+</body>
+</html>
