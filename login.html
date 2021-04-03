@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<style>
+		body{
+			background-image: url("image2.jpeg");           
+			background-size: cover;
+            background-attachment: fixed;
+		}
+		.wrap{
+			max-width: 450px;
+			border-radius: 20px;
+			margin:auto;
+			background: rgba(0,0,0,0.8);
+			box-sizing: border-box;
+			padding: 40px;
+			color: #fff;
+			margin-top: 100px; 
+		}
+		input[type=text],input[type=password]{
+			width: 100%;
+			box-sizing: border-box;
+			padding:12px 5px;
+			background:rgba(0,0,0,0.10);
+			outline: none;
+			border: none;
+			border-bottom: 1px dotted #fff;
+			color:#fff;
+			border-radius: 5px;
+			margin: 5px;
+			font-weight: bold;
+		}
+		input[type=submit]{
+			width: 100%;
+			box-sizing: border-box;
+			padding: 10px 0;
+			margin-top: 30px;
+			outline: none;
+			border: none;
+			background: #60adde;
+			opacity: 0.7;
+			border-radius: 20px;
+			font-size: 20px;
+			color: #fff;
+		}
+		input[type=submit]:hover{
+			background: #003366;
+			opacity: 0.7;
+		}
+		h1{
+			text-align: center;
+		}
+        li{
+            float: left;
+            word-spacing: 4px;
+            margin-left: 1px;
+        }
+        p{
+        	font-size: 20px;
+        	color: orange;
+        }
+        a{
+        	color: lightblue;
+        }
+	</style>
+</head>
+<body>
+   <div class="wrap">
+     <h1>Log In</h1>
+     <form action="http://localhost:8000/login" method="get">
+     <form>
+     	<input type ="text" placeholder="User name.." required="**">
+     	<input type ="password" placeholder="password.." required="**">
+     	<input type="submit" value="login">
+     	<br><br>
+     </form>
+        <p>Don't have an account?<a href="signup.html">signup</a></p>
+ </div>
+</body>
+</html>
